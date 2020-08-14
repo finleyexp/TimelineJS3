@@ -1,3 +1,48 @@
+3.7.5 (2020-07-22)
+* More fixes to handling default font case
+* add missing import for Wistia media type
+
+3.7.4 (2020-07-21)
+* Fix #645: restore removeId to public API for a Timeline
+* Fix: only load font.default.css when no other font is specified; otherwise
+       cascade rules are inconsistent with old behavior.
+
+3.7.3 (2020-07-16)
+* Fix stupid bugs introduced with incomplete testing.
+
+3.7.2 (2020-07-16)
+* Fix variable naming error when handling thrown exceptions in adding eras
+* Fix name of div in developer "embed" template to restore ability to switch data source for dev view
+* don't routinely sanitize media URLs; instead, place that responsibility on Media subclasses for which the 'url' is actually used with markup
+
+3.7.1 (2020-07-10)
+* Protect against undefined/null options in constructor
+* Pass a valid message container for 'swipe to navigate' #644
+
+3.7.0 (2020-07-09)
+* Internal rewrite to use modern JavaScript
+* Sanitize HTML inputs
+
+3.6.6 (2020-03-11)
+* Replace Flickr API key
+
+3.6.5 (2019-05-01)
+* Revert construction of Google feeds URL to pre-3.6.4 pattern which should be more universally correct.
+
+3.6.4 (2019-04-30)
+* Fall back to Google Sheets API v4 when 500 error found using v3 (Workaround for Google API failure)
+* Issue #598 - use 24-hr time for Portuguese
+* PR #599 allow text selection on all devices
+* PR #608 allow video start times (and end times for youtube)
+* PR #609 fixes #577 link hover on slides w/ background images
+
+3.6.2 (2018-12-20)
+* PR #592 adds missing woff2 font to fix nav arrows on MS Edge
+* PR #594 Updated Czech (Čeština) translations
+
+3.6.1 (2018-10-10)
+* Correct translation of "July" in Slovenian.
+
 3.6.0 (2018-06-11)
 * Configure Google Analytics tracking to anonymize_ip for GDPR compliance
 
